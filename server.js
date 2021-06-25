@@ -11,7 +11,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-const whitelist = ['http://localhost:3000', 'http://localhost:8080']
+const whitelist = ['http://localhost:3000', 'http://localhost:8080', 'https://better-spotify-dc.herokuapp.com/']
 const corsOptions = {
   origin: function (origin, callback) {
     console.log("** Origin of request " + origin)
