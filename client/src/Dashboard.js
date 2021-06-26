@@ -76,10 +76,12 @@ export default function Dashboard({ code }) {
 
     return () => (cancel = true)
   }, [search, accessToken])
-
+  
   return (
-    <div>
-      <img src="/images/SupportGroupsBold.png" alt=""/>
+    <div className="wrapper1">
+      <div className="headerImage">
+        <img src="/images/SupportGroupsBold.png" alt=""/>
+      </div>
       <div className = "wrapper">
         <div className="lyricsWrap">
           <Container className="lyricsContainer border rounded d-flex flex-column py-2 bg-secondary" style={{height: "100vh" }}>
