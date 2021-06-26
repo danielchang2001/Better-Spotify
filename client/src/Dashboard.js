@@ -112,9 +112,6 @@ export default function Dashboard({ code }) {
             </div>
           </Container>
         </div>
-        <div className="secondDiv">
-
-        </div>
       </div>
     </div>
 

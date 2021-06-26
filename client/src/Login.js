@@ -8,7 +8,7 @@ const AUTH_URL =
 export default function Login() {
   return ([
     <div class="loginText">
-      <h2>A web application that uses Spotify's API to showcase lyrics and other information while listening.</h2>
+      <h2>A simple web application that uses Spotify's API to showcase lyrics while listening.</h2>
       <h3>Built with React and Node.</h3>
       </div>,
     <Container
