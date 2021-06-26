@@ -27,6 +27,11 @@
     
 }
 
+.lyricsWrap {
+    justify-content: center;
+    margin-top: 50px;
+}
+
 .lyricsContainer {
     min-width: 800px;
     max-height: 1000px;
@@ -34,5 +39,4 @@
 
 .headerImage {
     text-align: center;
-    margin-bottom: 30px;
 }
