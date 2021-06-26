@@ -82,7 +82,7 @@ export default function Dashboard({ code }) {
       <div className = "wrapper">
         <div className="lyricsWrap">
           <div className="headerImage">
-            <img src="/images/findlyrics.png" alt=""/>
+            <img src="/images/findlyrics2.png" alt=""/>
           </div>
           <Container className="lyricsContainer border rounded d-flex flex-column py-2 bg-secondary" style={{height: "100vh" }}>
             <div class="topSearch"></div>
@@ -113,7 +113,7 @@ export default function Dashboard({ code }) {
           </Container>
         </div>
         <div className="secondDiv">
-          dsdfsdf
+
         </div>
       </div>
     </div>
