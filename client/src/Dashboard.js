@@ -25,7 +25,6 @@ export default function Dashboard({ code }) {
     setPlayingTrack(track)
     setSearch("")
     setLyrics("")
-    setTitle("")
   }
 
   useEffect(() => {
@@ -79,35 +78,44 @@ export default function Dashboard({ code }) {
   }, [search, accessToken])
 
   return (
-    <div class="lyricsWrap">
-      <Container className="border rounded d-flex flex-column py-2" style={{height: "100vh" }}>
-        <div class="topSearch"></div>
-        <Form.Control
-          className="bg-dark text-white"
-          type="search"
-          placeholder="Search Songs/Artists"
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-        />
-        <div className="flex-grow-1 my-2" style={{ overflowY: "auto" }}>
-          {searchResults.map(track => (
-            <TrackSearchResult
-              track={track}
-              key={track.uri}
-              chooseTrack={chooseTrack}
+    <div>
+      <img src="/images/SupportGroupsBold.png" alt=""/>
+      <div className = "wrapper">
+        <div className="lyricsWrap">
+          <Container className="lyricsContainer border rounded d-flex flex-column py-2 bg-secondary" style={{height: "100vh" }}>
+            <div class="topSearch"></div>
+            <Form.Control
+              className="font-weight-bold bg-dark text-white"
+              type="search"
+              placeholder="Search Songs/Artists"
+              value={search}
+              onChange={e => setSearch(e.target.value)}
             />
-          ))}
-          {searchResults.length === 0 && (
-            <div className="text-center text-light font-weight-bold" style={{ whiteSpace: "pre" }}>
-              {lyrics}
+            <div className="flex-grow-1 my-2" style={{ overflowY: "auto" }}>
+              {searchResults.map(track => (
+                <TrackSearchResult
+                  track={track}
+                  key={track.uri}
+                  chooseTrack={chooseTrack}
+                />
+              ))}
+              {searchResults.length === 0 && (
+                <div className="text-lowercase text-center text-white font-weight-bold" style={{ whiteSpace: "pre" }}>
+                  {lyrics}
+                </div>
+              )}
             </div>
-          )}
+            <div className="player">
+              <Player class="player" accessToken={accessToken} trackUri={playingTrack?.uri} />
+            </div>
+          </Container>
         </div>
-        <div className="player">
-          <Player class="player" accessToken={accessToken} trackUri={playingTrack?.uri} />
+        <div className="secondDiv">
+          dsdfsdf
         </div>
-      </Container>
+      </div>
     </div>
-   
+
+
   )
 }
