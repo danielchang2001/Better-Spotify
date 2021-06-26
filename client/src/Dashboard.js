@@ -5,6 +5,9 @@ import TrackSearchResult from "./TrackSearchResult"
 import { Container, Form } from "react-bootstrap"
 import SpotifyWebApi from "spotify-web-api-node"
 import axios from "axios"
+import './Dashboard.css'
+
+document.body.style.backgroundColor = "#333";
 
 const spotifyApi = new SpotifyWebApi({
   clientId: "8b945ef10ea24755b83ac50cede405a0",
@@ -16,11 +19,13 @@ export default function Dashboard({ code }) {
   const [searchResults, setSearchResults] = useState([])
   const [playingTrack, setPlayingTrack] = useState()
   const [lyrics, setLyrics] = useState("")
+  const [title, setTitle] = useState("")
 
   function chooseTrack(track) {
     setPlayingTrack(track)
     setSearch("")
     setLyrics("")
+    setTitle("")
   }
 
   useEffect(() => {
@@ -74,30 +79,35 @@ export default function Dashboard({ code }) {
   }, [search, accessToken])
 
   return (
-    <Container className="d-flex flex-column py-2" style={{ height: "100vh" }}>
-      <Form.Control
-        type="search"
-        placeholder="Search Songs/Artists"
-        value={search}
-        onChange={e => setSearch(e.target.value)}
-      />
-      <div className="flex-grow-1 my-2" style={{ overflowY: "auto" }}>
-        {searchResults.map(track => (
-          <TrackSearchResult
-            track={track}
-            key={track.uri}
-            chooseTrack={chooseTrack}
-          />
-        ))}
-        {searchResults.length === 0 && (
-          <div className="text-center" style={{ whiteSpace: "pre" }}>
-            {lyrics}
-          </div>
-        )}
-      </div>
-      <div>
-        <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
-      </div>
-    </Container>
+    <div class="lyricsWrap">
+      <Container className="border rounded d-flex flex-column py-2" style={{height: "100vh" }}>
+        <div class="topSearch"></div>
+        <Form.Control
+          className="bg-dark text-white"
+          type="search"
+          placeholder="Search Songs/Artists"
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+        />
+        <div className="flex-grow-1 my-2" style={{ overflowY: "auto" }}>
+          {searchResults.map(track => (
+            <TrackSearchResult
+              track={track}
+              key={track.uri}
+              chooseTrack={chooseTrack}
+            />
+          ))}
+          {searchResults.length === 0 && (
+            <div className="text-center text-light" style={{ whiteSpace: "pre" }}>
+              {lyrics}
+            </div>
+          )}
+        </div>
+        <div className="player">
+          <Player class="player" accessToken={accessToken} trackUri={playingTrack?.uri} />
+        </div>
+      </Container>
+    </div>
+   
   )
 }
