@@ -1,62 +1,26 @@
-# Project Title
+# Spotify Lyrics
 
-Simple overview of use/purpose.
+A simple web application that uses Spotify's API to showcase lyrics while listening.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Developed with JavaScript (React, Node) and CSS. Runs only on a local development environment.
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Spotify Premium Account
+* Node JS
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+* Clone github repository.
+* Run "npm install" in both /client and /server folders.
+* Run "npm start" in /client.
+* Run "npm run devStart" in /server.
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* [Web Dev Simplified](https://www.youtube.com/watch?v=Xcet6msf3eE)
+
