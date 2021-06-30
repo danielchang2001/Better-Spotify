@@ -4,7 +4,7 @@ A simple web application that uses Spotify's API to showcase lyrics while listen
 
 ## Description
 
-Developed with JavaScript (React, Node) and CSS. Runs only on a local development environment.
+Developed with JavaScript (React, Node). Styled with Bootstrap and CSS. Runs only on a local development environment.
 
 ## Getting Started
 
