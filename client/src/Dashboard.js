@@ -19,7 +19,6 @@ export default function Dashboard({ code }) {
   const [searchResults, setSearchResults] = useState([])
   const [playingTrack, setPlayingTrack] = useState()
   const [lyrics, setLyrics] = useState("")
-  const [title, setTitle] = useState("")
 
   function chooseTrack(track) {
     setPlayingTrack(track)
@@ -63,7 +62,6 @@ export default function Dashboard({ code }) {
             },
             track.album.images[0]
           )
-
           return {
             artist: track.artists[0].name,
             title: track.name,
@@ -73,10 +71,9 @@ export default function Dashboard({ code }) {
         })
       )
     })
-
     return () => (cancel = true)
   }, [search, accessToken])
-
+  
   return (
     <div className="wrapper1">
       <div className = "wrapper">

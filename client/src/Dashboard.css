@@ -41,3 +41,9 @@
 .headerImage {
     text-align: center;
 }
+
+.trackListElement:hover {
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: #1cb954;
+}
