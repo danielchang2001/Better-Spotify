@@ -4,7 +4,7 @@ A simple web application that uses Spotify's API to showcase lyrics while listen
 
 ## Description
 
-![Auth](https://github.com/danielchang2001/Spotify-Lyrics/gif/auth.gif)
+![](https://github.com/danielchang2001/Spotify-Lyrics/gif/auth.gif)
 
 Developed with JavaScript (React, Node). Styled with Bootstrap and CSS. Runs only on a local development environment.
 
