@@ -12,6 +12,9 @@ Developed with JavaScript (React, Node). Styled with Bootstrap and CSS. Runs onl
 ### Find Lyrics
 ![](gif/findlyrics.gif)
 
+### No Lyrics Found
+![](gif/nolyrics.gif)
+
 ## Getting Started
 
 ### Dependencies
