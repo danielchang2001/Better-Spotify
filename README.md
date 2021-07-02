@@ -6,7 +6,7 @@ A simple web application that uses Spotify's API to showcase lyrics while listen
 
 Developed with JavaScript (React, Node). Styled with Bootstrap and CSS. Runs only on a local development environment.
 
-### Spotify Authentication
+### Authentication
 ![](gif/auth.gif)
 
 ### Find Lyrics
