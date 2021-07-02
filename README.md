@@ -9,6 +9,9 @@ Developed with JavaScript (React, Node). Styled with Bootstrap and CSS. Runs onl
 ### Spotify Authentication
 ![](gif/auth.gif)
 
+### Find Lyrics
+![](gif/findlyrics.gif)
+
 ## Getting Started
 
 ### Dependencies
