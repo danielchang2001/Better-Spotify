@@ -4,7 +4,7 @@ A simple web application that uses Spotify's API to showcase lyrics while listen
 
 ## Showcase
 
-Developed with JavaScript (React, Node). Styled with Bootstrap and CSS. Runs only on a local development environment.
+Developed with JavaScript (React, Node). Styled with Bootstrap and CSS.
 
 ### Authentication
 ![](gif/auth.gif)
