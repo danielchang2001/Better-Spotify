@@ -1,6 +1,6 @@
 # Spotify Lyrics
 
-A simple web application that uses Spotify's API to showcase lyrics while listening.
+A web application that uses Spotify's API to showcase lyrics while listening.
 
 ## Showcase
 
